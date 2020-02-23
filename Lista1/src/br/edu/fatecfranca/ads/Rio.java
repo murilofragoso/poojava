@@ -4,7 +4,17 @@
  * and open the template in the editor.
  */
 package br.edu.fatecfranca.ads;
-
+/**
+ * UML Rio
+ * - nome: String
+ * - nivel: float
+ * - poluido: boolean
+ * + chover(float): void
+ * + ensolarar(float): void
+ * + limpar(): void
+ * + sujar(): void
+ * + mostrar(): String
+ */
 public class Rio {
     //Variáveis
     String nome;

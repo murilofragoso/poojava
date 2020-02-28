@@ -7,19 +7,62 @@ package br.edu.fatecfranca.ads;
 
 public class Produto {
     //Variáveis
-    int id, qtde;
-    String descricao;
-    float preco;
+    private int id, qtde;
+    private String descricao;
+    private float preco;
     
     //Métodos Construtores
     public Produto(){
+        this.id = 0;
+        this.qtde = 0;
+        this.descricao = "Não definido";
+        this.preco = 0;
     }
     
     public Produto(int id, int qtde, String descricao, float preco){
         this.id = id;
         this.qtde = qtde;
         this.descricao = descricao;
-        this.preco = preco;
+        this.setPreco(preco);
+    }
+    
+    //setters
+    public void setPreco(float preco){
+        if(preco >= 0){
+            this.preco = preco;
+        }
+        else{
+            System.out.println("Preço não pode ser negativo");
+        }
+    }
+    
+    public void setQtde(int qtde){
+        this.qtde = qtde;
+    }
+    
+    public void setId(int id){
+        this.id = id;
+    }
+    
+    public void setDescricao(String descricao){
+        this.descricao = descricao;
+    }
+    
+    //getters
+    public float getPreco(){
+        return this.preco;
+    }
+    
+    public int getQtde(){
+        return this.qtde;
+    }
+    
+    public int getId(){
+        return this.id;
+    }
+    
+    public String getDescricao(){
+        return this.descricao;
     }
     
     //Métodos
@@ -36,7 +79,7 @@ public class Produto {
     }
     
     public void Descer(float x){
-        this.preco = this.preco - x;
+        this.setPreco(this.preco - x);
     }
     
     public String Mostrar(){

@@ -13,6 +13,9 @@ public class Rio {
     
     //Métodos Construtores
     public Rio(){
+        this.nome = "Não definido";
+        this.nivel = 0;
+        this.poluido = false;
     }
     
     public Rio(String nome, float nivel, boolean poluido){

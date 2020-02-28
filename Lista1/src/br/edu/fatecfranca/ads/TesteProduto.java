@@ -21,10 +21,10 @@ public class TesteProduto {
         JOptionPane.showMessageDialog(null, obj1.Mostrar());
         
         Produto obj2 = new Produto();
-        obj2.id = Integer.parseInt(JOptionPane.showInputDialog("Informe o ID"));
-        obj2.qtde = Integer.parseInt(JOptionPane.showInputDialog("Informe a quantidade"));
-        obj2.descricao = JOptionPane.showInputDialog("Informe a descrição");
-        obj2.preco = Float.parseFloat(JOptionPane.showInputDialog("Informe o Preço"));
+        obj2.setId(Integer.parseInt(JOptionPane.showInputDialog("Informe o ID")));
+        obj2.setQtde(Integer.parseInt(JOptionPane.showInputDialog("Informe a quantidade")));
+        obj2.setDescricao(JOptionPane.showInputDialog("Informe a descrição"));
+        obj2.setPreco(Float.parseFloat(JOptionPane.showInputDialog("Informe o Preço")));
         
         obj2.Comprar(20);
         obj2.Vender(6);

@@ -1,6 +1,14 @@
 package br.edu.fatecfranca.ads;
 /**
- * @author 1090481823025
+ * UML Carro
+ * - modelo: String
+ * - marca: String
+ * - motor: boolean
+ * - velAtual: float
+ * + ligar(): void
+ * + desligar(): void
+ * + acelerar(float): void
+ * + frear(float): void
  */
 public class Carro {
     // Variáveis

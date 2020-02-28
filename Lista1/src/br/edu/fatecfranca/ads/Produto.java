@@ -4,6 +4,18 @@
  * and open the template in the editor.
  */
 package br.edu.fatecfranca.ads;
+/**
+ * UML Produto
+ * - id: int
+ * - qtde: int
+ * - descricao: String
+ * - preco: float
+ * + comprar(int): void
+ * + vender(int): void
+ * + subir(float): void
+ * + descer(float): void
+ * + mostrar(): String
+ */
 
 public class Produto {
     //Variáveis

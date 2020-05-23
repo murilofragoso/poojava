@@ -50,4 +50,20 @@ public class Bicharada {
         return this.pets.add(novoPet);
     }
     
+    public boolean removePet(Pet pet){
+        return this.pets.remove(pet);
+    }
+    
+    public int getPet(Pet pet){
+        return this.pets.indexOf(pet);
+    }
+    
+    public boolean updatePet(Pet atual, Pet novo){
+        int pos = this.getPet(atual);
+        if(pos != -1){
+            this.pets.set(pos, novo);
+            return true;
+        }
+        else return false;
+    }
 }

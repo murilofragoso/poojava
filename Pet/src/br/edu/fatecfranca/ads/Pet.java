@@ -30,7 +30,7 @@ public abstract class Pet {
 
     @Override
     public String toString() {
-        return "Pet{" + "nome=" + nome + ", cor=" + cor + '}';
+        return "\n Pet{" + "nome=" + nome + ", cor=" + cor + '}';
     }
     
     public String demonstrarCarinho(){

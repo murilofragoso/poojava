@@ -8,11 +8,11 @@ public class Teste {
     }
         
     public static void main(String[] args) {
-        Cachorro dog1 = new Cachorro("Bidu", "Azul");
+        Cachorro dog1 = new Cachorro(true, "Bidu", "Azul");
         
         mostrarPet(dog1);
         
-        Gato cat1 = new Gato("Mingau", "Branco");
+        Gato cat1 = new Gato(false, "Mingau", "Branco");
         
         mostrarPet(cat1);
         
